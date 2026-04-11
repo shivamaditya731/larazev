@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +11,9 @@ main{
     color: white;
 }
 header{
+    font-family: "Saira Stencil", sans-serif;
     width: 90%;
+    font-size: 2vw;
     margin: auto;
     height: 10vh;
     display: flex;
@@ -33,5 +36,11 @@ header button{
     border-radius: clamp(12px,2vw,24px);
     border: none;
     cursor: pointer;
+}
+@media (max-width:768px) {
+    header{
+        width: 100%;
+        font-size: 20px;
+    }
 }
 
