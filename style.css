@@ -13,7 +13,7 @@ main{
 header{
     font-family: "Saira Stencil", sans-serif;
     width: 90%;
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin: auto;
     height: 10vh;
     display: flex;
@@ -29,6 +29,7 @@ header .mid{
 .mid a{
     text-decoration: none;
     color: white;
+    font-size: 1vw;
 }
 header button{
     padding: 1vmax 1.5vmax;
@@ -39,8 +40,16 @@ header button{
 }
 @media (max-width:768px) {
     header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
-        font-size: 20px;
+        font-size: 8px;
+        height:30px;
+    }
+    header .mid{
+        display: flex;
+        gap:5px;
     }
 }
 
