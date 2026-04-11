@@ -20,6 +20,7 @@ header{
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.1vmax solid lightgrey;
+    margin-bottom: 8vmax;
 }
 header .mid{
     display: flex;
@@ -38,18 +39,41 @@ header button{
     border: none;
     cursor: pointer;
 }
+.sec-1{
+    height: auto;
+    margin-bottom: 2vmax;
+}
+.sec-1 h1{
+    text-align: center;
+    font-size: 8vw;
+}
+.sec-2{
+    height: auto;
+    text-align: center;
+    font-size: 1.5vw;
+}
+.sec-2 button{
+    background-color: black;
+    color: white;
+    border-radius: 2vw;
+    padding: 8px 12px;
+    border: 0.1vw solid lightgray;
+}
 @media (max-width:768px) {
     header{
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        font-size: 8px;
+        font-size: 14px;
         height:30px;
     }
     header .mid{
         display: flex;
         gap:5px;
+    }
+    .mid a{
+        font-size: 10px;
     }
 }
 
