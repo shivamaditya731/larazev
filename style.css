@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -364,6 +365,7 @@ source{
     background-color: black;
     width: 100%;
     height: auto;
+    margin-bottom: clamp(20px,9vw,100px);
 }
 .one{
     font-family: "Playwrite IE", cursive;
@@ -511,7 +513,77 @@ source{
     color: green;
     background: #1a1a1a;
 }
-
+.sec-7{
+    width: 80%;
+    height: auto;
+    font-size: clamp(12px,1.5vw,25px);
+      font-family: "Open Sans", sans-serif;
+      padding: clamp(15px,3vw,25px);
+      border-bottom: 0.3vw solid grey;
+      margin: auto;
+}
+.sec-7 h1{
+    margin-bottom: clamp(15px,1.5vw,25px);
+}
+.sec-8{
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: clamp(20px,12vw,150px);
+}
+.reel-1{
+    width:35%;
+    height: 80%;
+    position: relative;
+}
+.reel-1 img{
+    width: 100%;
+    height: 100%;
+   border-radius: clamp(10px,1.5vw,25px);
+}
+.reel-1 video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0%;
+    left: 0%;
+    object-fit: cover;
+    border-radius: clamp(10px,1.5vw,25px);
+    opacity: 0;
+}
+.reel-2{
+    width:35%;
+    height: 80%;
+    position: relative;
+}
+.reel-2 img{
+    width: 100%;
+    height: 100%;
+     border-radius: clamp(10px,1.5vw,25px);
+}
+.reel-2 video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0%;
+    left: 0%;
+    object-fit: cover;
+    border-radius: clamp(10px,1.5vw,25px);
+    opacity: 0;
+}
+.sec-8 button{
+    padding: 1vw 2vw;
+    background-color: #4F5BFF;
+    border-radius: clamp(12px,2vw,25px);
+    cursor: pointer;
+    border: 0.1vw solid white;
+    transition: transform 1s ease;
+}
+.sec-8 button:hover{
+    transform: translateY(-1vw);
+}
 @media (max-width:768px) {
 
     /* HEADER */
@@ -750,4 +822,11 @@ source{
         font-size: 5vw;
     }
 }
-
+@media (max-width:480px) {
+    .sec-8{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:clamp(15px,2vw,25px);
+    }
+}
