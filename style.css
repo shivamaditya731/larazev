@@ -447,6 +447,71 @@ source{
         transform: translateX(-100%);
     }
 }
+/* Hamburger button — hidden on desktop */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    z-index: 1001;
+}
+.hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+.hamburger.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile slide-down menu */
+.mobile-menu {
+    display: none !important;
+    flex-direction: column;
+    background-color: #111;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+}
+.mobile-menu.open {
+    max-height: 400px;
+    padding: 12px 0;
+}
+.mobile-menu a {
+    font-family: "Saira Stencil", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 4vw;
+    padding: 14px 6vw;
+    border-bottom: 0.5px solid #333;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+.mobile-menu a:last-child {
+    border-bottom: none;
+}
+.mobile-menu a:hover {
+    color: green;
+    background: #1a1a1a;
+}
+
 @media (max-width:768px) {
 
     /* HEADER */
@@ -468,10 +533,14 @@ source{
     .nav{
         display: none;
     }
-    header button{
-        padding: 8px 14px;
-        font-size: 12px;
-        border-radius: 20px;
+    header > button:not(.hamburger){
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .mobile-menu {
+        display: flex !important;
     }
 
     /* SEC 1 */

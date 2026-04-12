@@ -34,7 +34,22 @@
                     <p><a href="">WEBSITES</a></p>
                 </div>
             <button type="submit">LETS TALK</button>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </header>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="">WHAT WE DO</a>
+            <a href="">AREAS OF EXPERTISE</a>
+            <a href="">UI UX DESIGN</a>
+            <a href="">PRODUCT DESIGN</a>
+            <a href="">DESIGN PROCESS</a>
+            <a href="">ABOUT AGENCY</a>
+        </div>
         <div class="sec-1">
             <h1>AI&ML PRODUCT</h1>
             <h1>DESIGN AGENCY</h1>
@@ -173,5 +188,19 @@
     </main>
     
     <script src="index.js"></script>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+        });
+        mobileMenu.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('open');
+                mobileMenu.classList.remove('open');
+            });
+        });
+    </script>
 </body>
 </html>
