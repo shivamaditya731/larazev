@@ -448,20 +448,237 @@ source{
     }
 }
 @media (max-width:768px) {
+
+    /* HEADER */
     header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
+        width: 95%;
+        height: auto;
+        padding: 12px 0;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 6vmax;
         font-size: 14px;
-        height:30px;
+    }
+    header .lazarev{
+        font-size: 5vw;
     }
     header .mid{
-        display: flex;
-        gap:5px;
+        display: none;
     }
-    .mid a{
-        font-size: 10px;
+    .nav{
+        display: none;
+    }
+    header button{
+        padding: 8px 14px;
+        font-size: 12px;
+        border-radius: 20px;
+    }
+
+    /* SEC 1 */
+    .sec-1 h1{
+        font-size: 13vw;
+        line-height: 1.1;
+    }
+
+    /* SEC 2 */
+    .sec-2{
+        font-size: 3.5vw;
+        line-height: 6vw;
+        margin-bottom: 6vh;
+        padding: 0 4vw;
+    }
+    .sec-2 button{
+        font-size: 3vw;
+        padding: 6px 10px;
+        border-radius: 4vw;
+    }
+
+    /* LOGO STRIP */
+    #moving{
+        width: 90%;
+        height: 8vh;
+        padding: 1vw;
+    }
+
+    /* VID */
+    .vid{
+        width: 92%;
+        height: 50vw;
+        border-radius: 4vw;
+    }
+    .arrow{
+        height: 12vw;
+        width: 12vw;
+    }
+    .arrow i{
+        font-size: 7vw;
+    }
+
+    /* SEC 3 */
+    .sec-3{
+        margin-top: 8vmax;
+        height: auto;
+        min-height: 100vw;
+        flex-direction: column;
+        padding: 8vw 0;
+    }
+    .sec-3 .max{
+        position: relative;
+        left: 0;
+        padding: 4vw;
+        text-align: center;
+    }
+    .max h1{
+        font-size: 8vw;
+        margin-bottom: 2vw;
+    }
+    .max p{
+        font-size: 3.5vw;
+    }
+    .max h3{
+        font-size: 4vw;
+        margin-top: 3vh;
+        margin-bottom: 4vh;
+    }
+    .max button{
+        padding: 3vw 6vw;
+        font-size: 3.5vw;
+        border-radius: 6vw;
+    }
+
+    /* SEC 4 */
+    .sec-4{
+        flex-direction: column;
+    }
+    .lefty{
+        font-size: 7vw;
+        padding: 6vw 4vw 2vw 4vw;
+    }
+    .righty{
+        padding: 0 4vw 6vw 4vw;
+    }
+    .righty h2{
+        font-size: 3vw;
+    }
+    .m h2, .o h2{
+        padding-top: 4vw;
+        margin-bottom: 2vh;
+    }
+    .m p, .o p{
+        font-size: 3.5vw;
+        padding-right: 0;
+        line-height: 1.6;
+    }
+
+    /* SEC 5 GRID */
+    .sec-5{
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+    .sec-5 h3{
+        font-size: 6vw;
+    }
+    .sec-5 .first,
+    .sec-5 .second,
+    .sec-5 .third,
+    .sec-5 .fourth,
+    .sec-5 .fifth,
+    .sec-5 .sixth{
+        padding: 4vw 3vw;
+        min-height: 100px;
+    }
+    .first-c p:first-child,
+    .second-c p:first-child,
+    .third-c p:first-child,
+    .fourth-c p:first-child,
+    .fifth-c p:first-child,
+    .sixth-c p:first-child{
+        font-size: 2.5vw;
+    }
+    .first-c p:last-child,
+    .second-c p:last-child,
+    .third-c p:last-child,
+    .fourth-c p:last-child,
+    .fifth-c p:last-child,
+    .sixth-c p:last-child{
+        font-size: 2.5vw;
+    }
+
+    /* SEC 6 */
+    .sec-6{
+        flex-direction: column;
+    }
+    .one{
+        padding: 6vw 4vw;
+        font-size: 4.5vw;
+    }
+    .one p{
+        font-size: 5vw;
+        line-height: 1.5;
+    }
+    .one .para{
+        margin-top: 4vw;
+    }
+    .one .para p{
+        font-size: 3.5vw;
+        line-height: 1.6;
+    }
+    .two{
+        width: 100%;
+        padding: 0 4vw 6vw 4vw;
+        margin-top: 2vw;
+    }
+    .mes,
+    .cri,
+    .ney,
+    .rob{
+        font-size: 4vw;
+        padding: 5vw 0;
+        overflow: hidden;
+    }
+    .mes img,
+    .cri img,
+    .ney img,
+    .rob img{
+        width: 60%;
+        height: 80%;
+    }
+}
+
+@media (max-width: 480px){
+    .sec-1 h1{
+        font-size: 15vw;
+    }
+    .sec-5{
+        grid-template-columns: repeat(1, minmax(0,1fr));
+    }
+    .sec-5 h3{
+        font-size: 9vw;
+    }
+    .first-c p:first-child,
+    .second-c p:first-child,
+    .third-c p:first-child,
+    .fourth-c p:first-child,
+    .fifth-c p:first-child,
+    .sixth-c p:first-child,
+    .first-c p:last-child,
+    .second-c p:last-child,
+    .third-c p:last-child,
+    .fourth-c p:last-child,
+    .fifth-c p:last-child,
+    .sixth-c p:last-child{
+        font-size: 3.5vw;
+    }
+    .max h1{
+        font-size: 10vw;
+    }
+    .vid{
+        height: 60vw;
+    }
+    .mes,
+    .cri,
+    .ney,
+    .rob{
+        font-size: 5vw;
     }
 }
 

@@ -1,3 +1,4 @@
+const isMobile = window.innerWidth <= 768;
 let nav=document.querySelector('.nav');
 let x=document.querySelectorAll('.mid a')[0];
 let arrow=document.querySelector('.arrow');
@@ -37,25 +38,23 @@ video.addEventListener('ended', () => {
 });
 const vid = document.querySelector('.vid');
 
+if(!isMobile){
 vid.addEventListener('mousemove', (e) => {
   const rect = vid.getBoundingClientRect();
-
   const x = (e.clientX - rect.left - rect.width / 2) / (rect.width / 2);
   const y = (e.clientY - rect.top - rect.height / 2) / (rect.height / 2);
-
   const scaleX = 1 + Math.abs(x) * 0.05;
   const scaleY = 1 + Math.abs(y) * 0.05;
   const translateX = x * 8;
   const translateY = y * 8;
-
   vid.style.transition = 'none';
   vid.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scaleX}, ${scaleY})`;
 });
-
 vid.addEventListener('mouseleave', () => {
   vid.style.transition = 'transform 0.5s ease';
   vid.style.transform = 'translate(0, 0) scale(1, 1)';
 });
+}
 // Torsion spin effect on button
 const text = but.textContent;
 but.innerHTML = '';
@@ -94,6 +93,7 @@ but.addEventListener('mouseleave', () => {
   });
 });
 
+if(!isMobile){
 mes.addEventListener('mousemove', function(dets){
     img1.style.opacity='1';
    img1.style.transform = `translateX(${dets.offsetX}px)`;
@@ -126,3 +126,4 @@ rob.addEventListener('mouseleave',function(){
   img4.style.opacity='0';
   img4.style.transform = `translateX(0px)`;
 });
+}
