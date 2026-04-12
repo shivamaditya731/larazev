@@ -170,6 +170,7 @@ header button:hover{
 }
 source{
     border-radius: 2vw;
+    object-fit: cover;
 }
 .arrow{
     height: 5vw;
