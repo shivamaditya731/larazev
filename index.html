@@ -6,9 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
 </head>
 <body>
-    <main>
+    <main data-scroll-container>
         <header>
             <h1 class="lazarev">LAZAREV</h1>
             <div class="mid">
@@ -20,18 +21,18 @@
                 <h3><a href="">ABOUT AGENCY</a></h3>
             </div>
             <div class="nav">
-                    <p><a href="">🔥AI&ML</a></p>
-                    <p><a href="">FINTECH</a></p>
-                    <p><a href="">WEB3</a></p>
-                    <p><a href="">EDTECH</a></p>
-                    <p><a href="">LOGISTICS</a></p>
-                    <p><a href="">HEALTHCARE</a>E</p>
-                    <p><a href="">ENTERPRISE</a></p>
-                    <p><a href="">REAL ESTATE</a></p>
-                    <p><a href="">LEGAL TECH</a></p>
-                    <p><a href="">AD</a></p>
-                    <p><a href="">MEDIA</a></p>
-                    <p><a href="">WEBSITES</a></p>
+                    <p><a href="https://www.lazarev.agency/solutions/ai-ml">🔥AI&ML</a></p>
+                    <p><a href="https://www.lazarev.agency/solutions/fintech">FINTECH</a></p>
+                    <p><a href="https://www.lazarev.agency/solutions/web3">WEB3</a></p>
+                    <p><a href="https://www.lazarev.agency/solutions/edtech-design">EDTECH</a></p>
+                    <p><a href="https://www.lazarev.agency/solutions/edtech-design">LOGISTICS</a></p>
+                    <p><a href="https://www.lazarev.agency/solutions/healthcare-design">HEALTHCARE</a>E</p>
+                    <p><a href="https://www.lazarev.agency/solutions/enterprise-design">ENTERPRISE</a></p>
+                    <p><a href="https://www.lazarev.agency/solutions/real-estate">REAL ESTATE</a></p>
+                    <p><a href="https://www.lazarev.agency/solutions/for-legal-tech-design">LEGAL TECH</a></p>
+                    <p><a href="https://www.lazarev.agency/solutions/adtech-design">AD</a></p>
+                    <p><a href="https://www.lazarev.agency/solutions/media-content-design">MEDIA</a></p>
+                    <p><a href="https://www.lazarev.agency/solutions/websites-design">WEBSITES</a></p>
                 </div>
             <button type="submit">LETS TALK</button>
             <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -40,8 +41,6 @@
                 <span></span>
             </button>
         </header>
-
-        <!-- Mobile Menu -->
         <div class="mobile-menu" id="mobileMenu">
             <a href="">WHAT WE DO</a>
             <a href="">AREAS OF EXPERTISE</a>
@@ -185,8 +184,25 @@
                 </div>
             </div>
         </div>
+        <div class="sec-7">
+            <h1>Featured digital<br>design projects</h1>
+            <p>Our portfolio encompasses a wide<br>range of digital designs essential for<br>the growth of modern businesses.<br>From B2B SaaS and B2C mobile apps<br>to marketing design for promotions,<br>we display our work created for early-<br>stage startups and enterprises at<br>various stages of their growth.</p>
+        </div>
+        <div class="sec-8">
+            <div class="but">
+            <button type="submit">See All Case Studies</button>
+            </div>
+            <div class="reel-1">
+                <img src="f5a60567-928a-41eb-bc21-057397460f8e.webp" alt="">
+                <video src="Technology_Reel_Generation.mp4"></video>
+            </div>
+            <div class="reel-2">
+                <img src="94e4b8ac4a8b734ab93a55369354649c.jpg" alt="">
+                <video src="AI_Reel_Website_Design_Animation.mp4"></video>
+            </div>
+        </div>
     </main>
-    
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script src="index.js"></script>
     <script>
         const hamburger = document.getElementById('hamburger');
