@@ -1,3 +1,8 @@
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true,
+    multiplier: 0.2 // scroll speed, kam karo toh slow, zyada toh fast
+});
 const isMobile = window.innerWidth <= 768;
 let nav=document.querySelector('.nav');
 let x=document.querySelectorAll('.mid a')[0];
@@ -13,6 +18,11 @@ let ney=document.querySelector('.ney');
 let img3=document.querySelector('.ney img');
 let rob=document.querySelector('.rob');
 let img4=document.querySelector('.rob img');
+let tech=document.querySelector('.reel-1');
+let trump=document.querySelector('.reel-2');
+let vid2=document.querySelector('.reel-1 video');
+let vid3=document.querySelector('.reel-2 video');
+let sec3=document.querySelector('.sec-3');
 x.addEventListener('mousemove', function(){
     nav.style.opacity='1';
 });
@@ -127,3 +137,22 @@ rob.addEventListener('mouseleave',function(){
   img4.style.transform = `translateX(0px)`;
 });
 }
+tech.addEventListener('mouseenter',function(){
+  vid2.style.opacity='1';
+  vid2.play();
+});
+tech.addEventListener('mouseleave',function(){
+  vid2.style.opacity='0';
+  vid2.pause();
+});
+trump.addEventListener('mouseenter',function(){
+  vid3.style.opacity='1';
+  vid3.play();
+});
+trump.addEventListener('mouseleave',function(){
+  vid3.style.opacity='0';
+  vid3.pause();
+});
+sec3.addEventListener('mousemove',function(pepe){
+  
+});
