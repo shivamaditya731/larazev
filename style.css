@@ -1003,4 +1003,38 @@ padding-right: 3vw;
 .neuer{
     text-align: center;
 }
+.sec-10{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: green;
+}
+.sec-10 button{
+    padding: 5px 15px;
+    background-color:black;
+    color: white;
+    text-align: center;
+    border: black 1px solid;
+}
+.sec-10 h3{
+    font-size: 15px;
+    font-weight: 700;
+}
+.product{
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.product h3{
+    padding-right: 38px;
+}
+.ux{
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+.ui h3{
+    padding-right: 25px;
+}
+
 }
